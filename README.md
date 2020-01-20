@@ -1,5 +1,6 @@
 # QANAS
-we seek to increase the controller's generality by feeding it input from varying but similar tasks, so that the controller is "pre-trained" to quickly adapt to generating good architectures for tasks related but unseen during training. However, this would most certainly increase training time.
+We seek to increase the controller's generality by feeding it input from varying but similar tasks, so that the controller is "pre-trained" to quickly adapt to generating good architectures for tasks related but unseen during training. However, this would most certainly increase training time.
+
 We note that NAS, as it stands in https://arxiv.org/pdf/1611.01578.pdf has an extremely high training time. To combat this, we use a prediction
 performance mechanism as described here (https://openreview.net/pdf?id=BJypUGZ0Z). More so, policy gradient and action evaluation can benefit
 from updating multiple times throughout an episode, in contrast to the full monte carlo esque method from the original paper. So, in hopes 
