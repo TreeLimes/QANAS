@@ -8,4 +8,4 @@ we make use of the performance prediction here along with a "rolling architectur
 2. There is no action evaluation in the original paper. Thus we implement a simple feedforward network that takes the controller's hidden output
 and the current action as input, and is trained every step along side the controller.
 
-More so, it we seek to increase the generality of the architectures that the controller generates by feeding it input from varying but similar tasks, so that the controller is "pre-trained" to quickly adapt to generating a good architecture for tasks related but unseen during training.
+More so, it we seek to increase the controller's generality by feeding it input from varying but similar tasks, so that the controller is "pre-trained" to quickly adapt to generating a good architecture for tasks related but unseen during training.
